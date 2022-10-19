@@ -1,0 +1,180 @@
+{
+  "assets" : [
+    {
+      "filename" : "1.imageset",
+      "unassigned" : true
+    },
+    {
+      "filename" : "2.imageset",
+      "unassigned" : true
+    },
+    {
+      "filename" : "3.imageset",
+      "unassigned" : true
+    },
+    {
+      "filename" : "4.imageset",
+      "unassigned" : true
+    },
+    {
+      "filename" : "5.imageset"
+    },
+    {
+      "filename" : "6.imageset"
+    },
+    {
+      "filename" : "7.imageset"
+    },
+    {
+      "filename" : "8.imageset"
+    },
+    {
+      "filename" : "9.imageset"
+    },
+    {
+      "filename" : "10.imageset"
+    },
+    {
+      "filename" : "11.imageset"
+    },
+    {
+      "filename" : "12.imageset"
+    },
+    {
+      "filename" : "13.imageset"
+    },
+    {
+      "filename" : "14.imageset"
+    },
+    {
+      "filename" : "15.imageset"
+    },
+    {
+      "filename" : "16.imageset"
+    },
+    {
+      "filename" : "17.imageset"
+    },
+    {
+      "filename" : "18.imageset"
+    },
+    {
+      "filename" : "19.imageset"
+    },
+    {
+      "filename" : "20.imageset"
+    },
+    {
+      "filename" : "21.imageset"
+    },
+    {
+      "filename" : "22.imageset"
+    },
+    {
+      "filename" : "23.imageset"
+    },
+    {
+      "filename" : "24.imageset"
+    },
+    {
+      "filename" : "25.imageset"
+    },
+    {
+      "filename" : "26.imageset"
+    },
+    {
+      "filename" : "27.imageset"
+    },
+    {
+      "filename" : "28.imageset"
+    },
+    {
+      "filename" : "29.imageset"
+    },
+    {
+      "filename" : "30.imageset"
+    },
+    {
+      "filename" : "31.imageset"
+    },
+    {
+      "filename" : "32.imageset"
+    },
+    {
+      "filename" : "33.imageset"
+    },
+    {
+      "filename" : "34.imageset"
+    },
+    {
+      "filename" : "35.imageset"
+    },
+    {
+      "filename" : "36.imageset"
+    },
+    {
+      "filename" : "37.imageset"
+    },
+    {
+      "filename" : "38.imageset"
+    },
+    {
+      "filename" : "39.imageset"
+    },
+    {
+      "filename" : "40.imageset"
+    },
+    {
+      "filename" : "Circular.imageset",
+      "idiom" : "watch",
+      "role" : "circular"
+    },
+    {
+      "filename" : "Extra Large.imageset",
+      "idiom" : "watch",
+      "role" : "extra-large"
+    },
+    {
+      "filename" : "Graphic Bezel.imageset",
+      "idiom" : "watch",
+      "role" : "graphic-bezel"
+    },
+    {
+      "filename" : "Graphic Circular.imageset",
+      "idiom" : "watch",
+      "role" : "graphic-circular"
+    },
+    {
+      "filename" : "Graphic Corner.imageset",
+      "idiom" : "watch",
+      "role" : "graphic-corner"
+    },
+    {
+      "filename" : "Graphic Extra Large.imageset",
+      "idiom" : "watch",
+      "role" : "graphic-extra-large"
+    },
+    {
+      "filename" : "Graphic Large Rectangular.imageset",
+      "idiom" : "watch",
+      "role" : "graphic-large-rectangular"
+    },
+    {
+      "filename" : "Modular.imageset",
+      "idiom" : "watch",
+      "role" : "modular"
+    },
+    {
+      "filename" : "smiley.imageset"
+    },
+    {
+      "filename" : "Utilitarian.imageset",
+      "idiom" : "watch",
+      "role" : "utilitarian"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

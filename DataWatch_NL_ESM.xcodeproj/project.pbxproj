@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9339356D267AA38400CAA5BC /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339356C267AA38400CAA5BC /* Activity.swift */; };
+		9339356F267AA39E00CAA5BC /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339356E267AA39E00CAA5BC /* TimeTable.swift */; };
+		93393577267AA47300CAA5BC /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93393576267AA47300CAA5BC /* TableRow.swift */; };
+		9339358E267AD26800CAA5BC /* FinalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339358D267AD26800CAA5BC /* FinalScreen.swift */; };
+		93393594267BC14B00CAA5BC /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93393593267BC14B00CAA5BC /* Query.swift */; };
+		93393598267BE9EB00CAA5BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93393597267BE9EB00CAA5BC /* GoogleService-Info.plist */; };
+		9339359B267BEB5B00CAA5BC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9339359A267BEB5B00CAA5BC /* FirebaseAuth */; };
+		9339359D267BEB5B00CAA5BC /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9339359C267BEB5B00CAA5BC /* FirebaseDatabase */; };
+		933ED737266EE5EF00012F13 /* DataWatch_NL_ESM WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 933ED736266EE5EF00012F13 /* DataWatch_NL_ESM WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		933ED73D266EE5EF00012F13 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933ED73B266EE5EF00012F13 /* Interface.storyboard */; };
+		933ED73F266EE5F000012F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933ED73E266EE5F000012F13 /* Assets.xcassets */; };
+		933ED746266EE5F000012F13 /* DataWatch_NL_ESM WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 933ED745266EE5F000012F13 /* DataWatch_NL_ESM WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		933ED74D266EE5F000012F13 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ED74C266EE5F000012F13 /* ExtensionDelegate.swift */; };
+		933ED74F266EE5F000012F13 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ED74E266EE5F000012F13 /* NotificationController.swift */; };
+		933ED751266EE5F000012F13 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ED750266EE5F000012F13 /* ComplicationController.swift */; };
+		933ED753266EE5F100012F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933ED752266EE5F100012F13 /* Assets.xcassets */; };
+		933ED75F266EE5F100012F13 /* DataWatch_NL_ESMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ED75E266EE5F100012F13 /* DataWatch_NL_ESMTests.swift */; };
+		933ED76A266EE5F100012F13 /* DataWatch_NL_ESMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ED769266EE5F100012F13 /* DataWatch_NL_ESMUITests.swift */; };
+		9359A74526F18AEC00705C7E /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359A74426F18AEC00705C7E /* LocalNotificationManager.swift */; };
+		937052D726C427D800F203AF /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937052D626C427D800F203AF /* ID.swift */; };
+		937052D926C4280300F203AF /* NotificationStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937052D826C4280300F203AF /* NotificationStart.swift */; };
+		937052DB26C4283800F203AF /* NotificationEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937052DA26C4283800F203AF /* NotificationEnd.swift */; };
+		937052DD26C428A300F203AF /* AllSubmit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937052DC26C428A300F203AF /* AllSubmit.swift */; };
+		937052DF26C4297500F203AF /* RelatedToActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937052DE26C4297500F203AF /* RelatedToActivity.swift */; };
+		93732AC526E6EB290005C6C6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933ED73B266EE5EF00012F13 /* Interface.storyboard */; };
+		938A003426E6E0C00066D8CB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ED74A266EE5F000012F13 /* InterfaceController.swift */; };
+		938A003526E6E33B0066D8CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93393597267BE9EB00CAA5BC /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		933ED738266EE5EF00012F13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 933ED72C266EE5EF00012F13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 933ED735266EE5EF00012F13;
+			remoteInfo = "DataWatch_NL_ESM WatchKit App";
+		};
+		933ED747266EE5F000012F13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 933ED72C266EE5EF00012F13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 933ED744266EE5F000012F13;
+			remoteInfo = "DataWatch_NL_ESM WatchKit Extension";
+		};
+		933ED75B266EE5F100012F13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 933ED72C266EE5EF00012F13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 933ED744266EE5F000012F13;
+			remoteInfo = "DataWatch_NL_ESM WatchKit Extension";
+		};
+		933ED766266EE5F100012F13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 933ED72C266EE5EF00012F13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 933ED735266EE5EF00012F13;
+			remoteInfo = "DataWatch_NL_ESM WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		933ED771266EE5F100012F13 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				933ED746266EE5F000012F13 /* DataWatch_NL_ESM WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		933ED775266EE5F100012F13 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				933ED737266EE5EF00012F13 /* DataWatch_NL_ESM WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9339356C267AA38400CAA5BC /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		9339356E267AA39E00CAA5BC /* TimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
+		93393576267AA47300CAA5BC /* TableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
+		9339358D267AD26800CAA5BC /* FinalScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScreen.swift; sourceTree = "<group>"; };
+		93393593267BC14B00CAA5BC /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		93393597267BE9EB00CAA5BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		933ED732266EE5EF00012F13 /* DataWatch_NL_ESM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataWatch_NL_ESM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		933ED736266EE5EF00012F13 /* DataWatch_NL_ESM WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DataWatch_NL_ESM WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		933ED73C266EE5EF00012F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		933ED73E266EE5F000012F13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		933ED740266EE5F000012F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		933ED745266EE5F000012F13 /* DataWatch_NL_ESM WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DataWatch_NL_ESM WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		933ED74A266EE5F000012F13 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		933ED74C266EE5F000012F13 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		933ED74E266EE5F000012F13 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		933ED750266EE5F000012F13 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		933ED752266EE5F100012F13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		933ED754266EE5F100012F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		933ED755266EE5F100012F13 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		933ED75A266EE5F100012F13 /* DataWatch_NL_ESMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataWatch_NL_ESMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		933ED75E266EE5F100012F13 /* DataWatch_NL_ESMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWatch_NL_ESMTests.swift; sourceTree = "<group>"; };
+		933ED760266EE5F100012F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		933ED765266EE5F100012F13 /* DataWatch_NL_ESMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataWatch_NL_ESMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		933ED769266EE5F100012F13 /* DataWatch_NL_ESMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWatch_NL_ESMUITests.swift; sourceTree = "<group>"; };
+		933ED76B266EE5F100012F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9359A74426F18AEC00705C7E /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		937052D626C427D800F203AF /* ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ID.swift; sourceTree = "<group>"; };
+		937052D826C4280300F203AF /* NotificationStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStart.swift; sourceTree = "<group>"; };
+		937052DA26C4283800F203AF /* NotificationEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationEnd.swift; sourceTree = "<group>"; };
+		937052DC26C428A300F203AF /* AllSubmit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSubmit.swift; sourceTree = "<group>"; };
+		937052DE26C4297500F203AF /* RelatedToActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedToActivity.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		933ED742266EE5F000012F13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9339359D267BEB5B00CAA5BC /* FirebaseDatabase in Frameworks */,
+				9339359B267BEB5B00CAA5BC /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		933ED757266EE5F100012F13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		933ED762266EE5F100012F13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		933ED72B266EE5EF00012F13 = {
+			isa = PBXGroup;
+			children = (
+				933ED73A266EE5EF00012F13 /* DataWatch_NL_ESM WatchKit App */,
+				933ED749266EE5F000012F13 /* DataWatch_NL_ESM WatchKit Extension */,
+				933ED75D266EE5F100012F13 /* DataWatch_NL_ESMTests */,
+				933ED768266EE5F100012F13 /* DataWatch_NL_ESMUITests */,
+				933ED733266EE5EF00012F13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		933ED733266EE5EF00012F13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				933ED732266EE5EF00012F13 /* DataWatch_NL_ESM.app */,
+				933ED736266EE5EF00012F13 /* DataWatch_NL_ESM WatchKit App.app */,
+				933ED745266EE5F000012F13 /* DataWatch_NL_ESM WatchKit Extension.appex */,
+				933ED75A266EE5F100012F13 /* DataWatch_NL_ESMTests.xctest */,
+				933ED765266EE5F100012F13 /* DataWatch_NL_ESMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		933ED73A266EE5EF00012F13 /* DataWatch_NL_ESM WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				933ED73B266EE5EF00012F13 /* Interface.storyboard */,
+				933ED73E266EE5F000012F13 /* Assets.xcassets */,
+				933ED740266EE5F000012F13 /* Info.plist */,
+			);
+			path = "DataWatch_NL_ESM WatchKit App";
+			sourceTree = "<group>";
+		};
+		933ED749266EE5F000012F13 /* DataWatch_NL_ESM WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				933ED74A266EE5F000012F13 /* InterfaceController.swift */,
+				9339356C267AA38400CAA5BC /* Activity.swift */,
+				9339356E267AA39E00CAA5BC /* TimeTable.swift */,
+				933ED74C266EE5F000012F13 /* ExtensionDelegate.swift */,
+				933ED74E266EE5F000012F13 /* NotificationController.swift */,
+				933ED750266EE5F000012F13 /* ComplicationController.swift */,
+				933ED752266EE5F100012F13 /* Assets.xcassets */,
+				933ED754266EE5F100012F13 /* Info.plist */,
+				933ED755266EE5F100012F13 /* PushNotificationPayload.apns */,
+				93393576267AA47300CAA5BC /* TableRow.swift */,
+				9339358D267AD26800CAA5BC /* FinalScreen.swift */,
+				93393593267BC14B00CAA5BC /* Query.swift */,
+				9359A74426F18AEC00705C7E /* LocalNotificationManager.swift */,
+				93393597267BE9EB00CAA5BC /* GoogleService-Info.plist */,
+				937052D626C427D800F203AF /* ID.swift */,
+				937052D826C4280300F203AF /* NotificationStart.swift */,
+				937052DA26C4283800F203AF /* NotificationEnd.swift */,
+				937052DC26C428A300F203AF /* AllSubmit.swift */,
+				937052DE26C4297500F203AF /* RelatedToActivity.swift */,
+			);
+			path = "DataWatch_NL_ESM WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		933ED75D266EE5F100012F13 /* DataWatch_NL_ESMTests */ = {
+			isa = PBXGroup;
+			children = (
+				933ED75E266EE5F100012F13 /* DataWatch_NL_ESMTests.swift */,
+				933ED760266EE5F100012F13 /* Info.plist */,
+			);
+			path = DataWatch_NL_ESMTests;
+			sourceTree = "<group>";
+		};
+		933ED768266EE5F100012F13 /* DataWatch_NL_ESMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				933ED769266EE5F100012F13 /* DataWatch_NL_ESMUITests.swift */,
+				933ED76B266EE5F100012F13 /* Info.plist */,
+			);
+			path = DataWatch_NL_ESMUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		933ED731266EE5EF00012F13 /* DataWatch_NL_ESM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 933ED776266EE5F100012F13 /* Build configuration list for PBXNativeTarget "DataWatch_NL_ESM" */;
+			buildPhases = (
+				933ED730266EE5EF00012F13 /* Resources */,
+				933ED775266EE5F100012F13 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				933ED739266EE5EF00012F13 /* PBXTargetDependency */,
+			);
+			name = DataWatch_NL_ESM;
+			productName = DataWatch_NL_ESM;
+			productReference = 933ED732266EE5EF00012F13 /* DataWatch_NL_ESM.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		933ED735266EE5EF00012F13 /* DataWatch_NL_ESM WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 933ED772266EE5F100012F13 /* Build configuration list for PBXNativeTarget "DataWatch_NL_ESM WatchKit App" */;
+			buildPhases = (
+				933ED734266EE5EF00012F13 /* Resources */,
+				933ED771266EE5F100012F13 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				933ED748266EE5F000012F13 /* PBXTargetDependency */,
+			);
+			name = "DataWatch_NL_ESM WatchKit App";
+			productName = "DataWatch_NL_ESM WatchKit App";
+			productReference = 933ED736266EE5EF00012F13 /* DataWatch_NL_ESM WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		933ED744266EE5F000012F13 /* DataWatch_NL_ESM WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 933ED76E266EE5F100012F13 /* Build configuration list for PBXNativeTarget "DataWatch_NL_ESM WatchKit Extension" */;
+			buildPhases = (
+				933ED741266EE5F000012F13 /* Sources */,
+				933ED742266EE5F000012F13 /* Frameworks */,
+				933ED743266EE5F000012F13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DataWatch_NL_ESM WatchKit Extension";
+			packageProductDependencies = (
+				9339359A267BEB5B00CAA5BC /* FirebaseAuth */,
+				9339359C267BEB5B00CAA5BC /* FirebaseDatabase */,
+			);
+			productName = "DataWatch_NL_ESM WatchKit Extension";
+			productReference = 933ED745266EE5F000012F13 /* DataWatch_NL_ESM WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		933ED759266EE5F100012F13 /* DataWatch_NL_ESMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 933ED779266EE5F100012F13 /* Build configuration list for PBXNativeTarget "DataWatch_NL_ESMTests" */;
+			buildPhases = (
+				933ED756266EE5F100012F13 /* Sources */,
+				933ED757266EE5F100012F13 /* Frameworks */,
+				933ED758266EE5F100012F13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				933ED75C266EE5F100012F13 /* PBXTargetDependency */,
+			);
+			name = DataWatch_NL_ESMTests;
+			productName = DataWatch_NL_ESMTests;
+			productReference = 933ED75A266EE5F100012F13 /* DataWatch_NL_ESMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		933ED764266EE5F100012F13 /* DataWatch_NL_ESMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 933ED77C266EE5F100012F13 /* Build configuration list for PBXNativeTarget "DataWatch_NL_ESMUITests" */;
+			buildPhases = (
+				933ED761266EE5F100012F13 /* Sources */,
+				933ED762266EE5F100012F13 /* Frameworks */,
+				933ED763266EE5F100012F13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				933ED767266EE5F100012F13 /* PBXTargetDependency */,
+			);
+			name = DataWatch_NL_ESMUITests;
+			productName = DataWatch_NL_ESMUITests;
+			productReference = 933ED765266EE5F100012F13 /* DataWatch_NL_ESMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		933ED72C266EE5EF00012F13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					933ED731266EE5EF00012F13 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					933ED735266EE5EF00012F13 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					933ED744266EE5F000012F13 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					933ED759266EE5F100012F13 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 933ED744266EE5F000012F13;
+					};
+					933ED764266EE5F100012F13 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 933ED735266EE5EF00012F13;
+					};
+				};
+			};
+			buildConfigurationList = 933ED72F266EE5EF00012F13 /* Build configuration list for PBXProject "DataWatch_NL_ESM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 933ED72B266EE5EF00012F13;
+			packageReferences = (
+				93393599267BEB5B00CAA5BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 933ED733266EE5EF00012F13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				933ED731266EE5EF00012F13 /* DataWatch_NL_ESM */,
+				933ED735266EE5EF00012F13 /* DataWatch_NL_ESM WatchKit App */,
+				933ED744266EE5F000012F13 /* DataWatch_NL_ESM WatchKit Extension */,
+				933ED759266EE5F100012F13 /* DataWatch_NL_ESMTests */,
+				933ED764266EE5F100012F13 /* DataWatch_NL_ESMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		933ED730266EE5EF00012F13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		933ED734266EE5EF00012F13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933ED73F266EE5F000012F13 /* Assets.xcassets in Resources */,
+				933ED73D266EE5EF00012F13 /* Interface.storyboard in Resources */,
+				938A003526E6E33B0066D8CB /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		933ED743266EE5F000012F13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933ED753266EE5F100012F13 /* Assets.xcassets in Resources */,
+				93732AC526E6EB290005C6C6 /* Interface.storyboard in Resources */,
+				93393598267BE9EB00CAA5BC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		933ED758266EE5F100012F13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		933ED763266EE5F100012F13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		933ED741266EE5F000012F13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933ED74F266EE5F000012F13 /* NotificationController.swift in Sources */,
+				937052D926C4280300F203AF /* NotificationStart.swift in Sources */,
+				937052DB26C4283800F203AF /* NotificationEnd.swift in Sources */,
+				938A003426E6E0C00066D8CB /* InterfaceController.swift in Sources */,
+				9339356F267AA39E00CAA5BC /* TimeTable.swift in Sources */,
+				93393577267AA47300CAA5BC /* TableRow.swift in Sources */,
+				9339358E267AD26800CAA5BC /* FinalScreen.swift in Sources */,
+				9339356D267AA38400CAA5BC /* Activity.swift in Sources */,
+				937052DD26C428A300F203AF /* AllSubmit.swift in Sources */,
+				93393594267BC14B00CAA5BC /* Query.swift in Sources */,
+				937052DF26C4297500F203AF /* RelatedToActivity.swift in Sources */,
+				937052D726C427D800F203AF /* ID.swift in Sources */,
+				9359A74526F18AEC00705C7E /* LocalNotificationManager.swift in Sources */,
+				933ED751266EE5F000012F13 /* ComplicationController.swift in Sources */,
+				933ED74D266EE5F000012F13 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		933ED756266EE5F100012F13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933ED75F266EE5F100012F13 /* DataWatch_NL_ESMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		933ED761266EE5F100012F13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933ED76A266EE5F100012F13 /* DataWatch_NL_ESMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		933ED739266EE5EF00012F13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 933ED735266EE5EF00012F13 /* DataWatch_NL_ESM WatchKit App */;
+			targetProxy = 933ED738266EE5EF00012F13 /* PBXContainerItemProxy */;
+		};
+		933ED748266EE5F000012F13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 933ED744266EE5F000012F13 /* DataWatch_NL_ESM WatchKit Extension */;
+			targetProxy = 933ED747266EE5F000012F13 /* PBXContainerItemProxy */;
+		};
+		933ED75C266EE5F100012F13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 933ED744266EE5F000012F13 /* DataWatch_NL_ESM WatchKit Extension */;
+			targetProxy = 933ED75B266EE5F100012F13 /* PBXContainerItemProxy */;
+		};
+		933ED767266EE5F100012F13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 933ED735266EE5EF00012F13 /* DataWatch_NL_ESM WatchKit App */;
+			targetProxy = 933ED766266EE5F100012F13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		933ED73B266EE5EF00012F13 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				933ED73C266EE5EF00012F13 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		933ED76C266EE5F100012F13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		933ED76D266EE5F100012F13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		933ED76F266EE5F100012F13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DB5HTCL8E;
+				INFOPLIST_FILE = "DataWatch_NL_ESM WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bradleyrey.DataWatch-NL-ESM.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		933ED770266EE5F100012F13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DB5HTCL8E;
+				INFOPLIST_FILE = "DataWatch_NL_ESM WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bradleyrey.DataWatch-NL-ESM.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		933ED773266EE5F100012F13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DB5HTCL8E;
+				IBSC_MODULE = DataWatch_NL_ESM_WatchKit_Extension;
+				INFOPLIST_FILE = "DataWatch_NL_ESM WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bradleyrey.DataWatch-NL-ESM.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		933ED774266EE5F100012F13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DB5HTCL8E;
+				IBSC_MODULE = DataWatch_NL_ESM_WatchKit_Extension;
+				INFOPLIST_FILE = "DataWatch_NL_ESM WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bradleyrey.DataWatch-NL-ESM.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		933ED777266EE5F100012F13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DB5HTCL8E;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bradleyrey.DataWatch-NL-ESM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		933ED778266EE5F100012F13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DB5HTCL8E;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bradleyrey.DataWatch-NL-ESM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		933ED77A266EE5F100012F13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DataWatch_NL_ESMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bradleyrey.DataWatch-NL-ESMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataWatch_NL_ESM WatchKit Extension.appex/DataWatch_NL_ESM WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		933ED77B266EE5F100012F13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DataWatch_NL_ESMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bradleyrey.DataWatch-NL-ESMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataWatch_NL_ESM WatchKit Extension.appex/DataWatch_NL_ESM WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		933ED77D266EE5F100012F13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DataWatch_NL_ESMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bradleyrey.DataWatch-NL-ESMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "DataWatch_NL_ESM WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		933ED77E266EE5F100012F13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DataWatch_NL_ESMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bradleyrey.DataWatch-NL-ESMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "DataWatch_NL_ESM WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		933ED72F266EE5EF00012F13 /* Build configuration list for PBXProject "DataWatch_NL_ESM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933ED76C266EE5F100012F13 /* Debug */,
+				933ED76D266EE5F100012F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		933ED76E266EE5F100012F13 /* Build configuration list for PBXNativeTarget "DataWatch_NL_ESM WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933ED76F266EE5F100012F13 /* Debug */,
+				933ED770266EE5F100012F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		933ED772266EE5F100012F13 /* Build configuration list for PBXNativeTarget "DataWatch_NL_ESM WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933ED773266EE5F100012F13 /* Debug */,
+				933ED774266EE5F100012F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		933ED776266EE5F100012F13 /* Build configuration list for PBXNativeTarget "DataWatch_NL_ESM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933ED777266EE5F100012F13 /* Debug */,
+				933ED778266EE5F100012F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		933ED779266EE5F100012F13 /* Build configuration list for PBXNativeTarget "DataWatch_NL_ESMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933ED77A266EE5F100012F13 /* Debug */,
+				933ED77B266EE5F100012F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		933ED77C266EE5F100012F13 /* Build configuration list for PBXNativeTarget "DataWatch_NL_ESMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933ED77D266EE5F100012F13 /* Debug */,
+				933ED77E266EE5F100012F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93393599267BEB5B00CAA5BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9339359A267BEB5B00CAA5BC /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93393599267BEB5B00CAA5BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9339359C267BEB5B00CAA5BC /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93393599267BEB5B00CAA5BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 933ED72C266EE5EF00012F13 /* Project object */;
+}

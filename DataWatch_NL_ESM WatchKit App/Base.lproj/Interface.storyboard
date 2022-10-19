@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc" pageOrientation="vertical">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
+    </dependencies>
+    <scenes>
+        <!--AllSubmitScreen-->
+        <scene sceneID="qKi-b2-3mn">
+            <objects>
+                <controller identifier="AllSubmitScreen" id="oNV-Nc-5aA" customClass="AllSubmit" customModule="DataWatch_NL_ESM_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Any questions? Email me at reyb@myumanitoba.ca" textAlignment="center" numberOfLines="4" id="Ykd-k4-5pP">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <group width="1" height="0.10000000000000001" alignment="left" id="zo3-7j-4P0"/>
+                        <button width="1" height="0.29999999999999999" alignment="left" title="Submit All" id="o1R-ZX-DQE">
+                            <color key="backgroundColor" red="0.29542451889999999" green="0.58465615500000001" blue="0.16073092329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="submitAllResponses" destination="oNV-Nc-5aA" id="jWz-2b-d5j"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="-982"/>
+        </scene>
+        <!--NotificationEndScreen-->
+        <scene sceneID="2yN-Vv-3xi">
+            <objects>
+                <controller identifier="NotificationEndScreen" id="3T6-sy-agC" customClass="NotificationEnd" customModule="DataWatch_NL_ESM_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" textAlignment="center" numberOfLines="3" id="seU-BK-xAz"/>
+                        <group width="1" alignment="left" id="igw-AE-Rip">
+                            <items>
+                                <picker width="0.33000000000000002" height="0.80000000000000004" alignment="left" id="dkg-LR-Kp4">
+                                    <connections>
+                                        <action selector="hourPickerChanged:" destination="3T6-sy-agC" id="ttM-ad-Mow"/>
+                                    </connections>
+                                </picker>
+                                <picker width="0.33000000000000002" height="0.80000000000000004" alignment="left" id="fbV-3h-ZyC">
+                                    <connections>
+                                        <action selector="minutePickerChanged:" destination="3T6-sy-agC" id="HqP-3o-sKt"/>
+                                    </connections>
+                                </picker>
+                                <picker width="0.33000000000000002" height="0.80000000000000004" alignment="left" id="g5Z-oc-ZSu">
+                                    <connections>
+                                        <action selector="ampmPickerChanged:" destination="3T6-sy-agC" id="SSy-VW-D4Q"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="ampmPicker" destination="g5Z-oc-ZSu" id="2mi-GS-ohe"/>
+                        <outlet property="hourPicker" destination="dkg-LR-Kp4" id="XUv-ok-vDn"/>
+                        <outlet property="minutePicker" destination="fbV-3h-ZyC" id="YZJ-D3-gMy"/>
+                        <outlet property="timeLabel" destination="seU-BK-xAz" id="PAc-3N-mTA"/>
+                        <segue destination="oNV-Nc-5aA" kind="relationship" relationship="nextPage" id="PxU-0S-iiY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="-652"/>
+        </scene>
+        <!--NotificationStartScreen-->
+        <scene sceneID="JrO-sO-Ezs">
+            <objects>
+                <controller identifier="NotificationStartScreen" id="2Tq-sV-BrU" customClass="NotificationStart" customModule="DataWatch_NL_ESM_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" textAlignment="center" numberOfLines="3" id="VYW-xq-5OX"/>
+                        <group width="1" alignment="left" id="XNP-FJ-O5Y">
+                            <items>
+                                <picker width="0.33000000000000002" height="0.80000000000000004" alignment="left" id="sbO-va-uJh">
+                                    <connections>
+                                        <action selector="hourPickerChanged:" destination="2Tq-sV-BrU" id="w0J-EU-v13"/>
+                                    </connections>
+                                </picker>
+                                <picker width="0.33000000000000002" height="0.80000000000000004" alignment="left" id="1ES-gw-LH6">
+                                    <connections>
+                                        <action selector="minutePickerChanged:" destination="2Tq-sV-BrU" id="mis-xZ-CDr"/>
+                                    </connections>
+                                </picker>
+                                <picker width="0.33000000000000002" height="0.80000000000000004" alignment="left" id="Kst-Mq-EpE">
+                                    <connections>
+                                        <action selector="ampmPickerChanged:" destination="2Tq-sV-BrU" id="QED-a8-CRu"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="ampmPicker" destination="Kst-Mq-EpE" id="7fB-tr-lJu"/>
+                        <outlet property="hourPicker" destination="sbO-va-uJh" id="bVi-56-fmN"/>
+                        <outlet property="minutePicker" destination="1ES-gw-LH6" id="nKv-W8-jCL"/>
+                        <outlet property="timeLabel" destination="VYW-xq-5OX" id="QP3-4b-bGn"/>
+                        <segue destination="3T6-sy-agC" kind="relationship" relationship="nextPage" id="biR-ZS-1jm"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="-322"/>
+        </scene>
+        <!--IDScreen-->
+        <scene sceneID="ucL-n6-gw6">
+            <objects>
+                <controller identifier="IDScreen" id="V3z-XR-1fK" customClass="ID" customModule="DataWatch_NL_ESM_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Settings" textAlignment="center" id="zi6-rd-85b">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                        <group width="1" height="0.10000000000000001" alignment="left" id="adW-iq-vnF"/>
+                        <label alignment="center" text="ID:" textAlignment="center" id="cgb-ZA-7ey">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <group width="1" height="0.10000000000000001" alignment="left" id="6cL-ZH-ixq"/>
+                        <label alignment="center" text="# of Responses:" textAlignment="center" numberOfLines="3" id="lv9-Yf-iMw"/>
+                    </items>
+                    <connections>
+                        <outlet property="idLabel" destination="cgb-ZA-7ey" id="Dqq-5I-OXe"/>
+                        <outlet property="numResponsesLabel" destination="lv9-Yf-iMw" id="n5P-sg-z9i"/>
+                        <segue destination="2Tq-sV-BrU" kind="relationship" relationship="nextPage" id="mRf-V6-7ji"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="-9"/>
+        </scene>
+        <!--HomeScreen-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="HomeScreen" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DataWatch_NL_ESM_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="What question or command do you have of your health data?" textAlignment="center" numberOfLines="5" id="hYB-6f-V3i">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <button alignment="center" title="Tap to Record" id="Fru-3a-38y">
+                            <color key="backgroundColor" red="0.21804757899999999" green="0.58465615500000001" blue="0.1363142654" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="19"/>
+                            <connections>
+                                <action selector="recordQueryButton" destination="AgC-eL-Hgc" id="MVT-nt-C0m"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <segue destination="V3z-XR-1fK" kind="relationship" relationship="nextPage" id="Nl6-gf-1gz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="344"/>
+        </scene>
+        <!--ActivityScreen-->
+        <scene sceneID="43x-DM-4lb">
+            <objects>
+                <controller identifier="ActivityScreen" id="Ke7-Cf-KtU" customClass="Activity" customModule="DataWatch_NL_ESM_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="center" text="What are you currently doing?" textAlignment="center" numberOfLines="2" id="5Lc-Qs-DfC"/>
+                        <button alignment="center" title="Tap to Record" id="Bn6-La-bcr">
+                            <color key="backgroundColor" red="0.21804757899999999" green="0.58465615500000001" blue="0.1363142654" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="19"/>
+                            <connections>
+                                <action selector="recordActivityButton" destination="Ke7-Cf-KtU" id="lNf-jr-oai"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="523" y="344"/>
+        </scene>
+        <!--RelatedToActivityScreen-->
+        <scene sceneID="KxZ-9r-Vl2">
+            <objects>
+                <controller identifier="RelatedToActivityScreen" id="GeC-CD-dFM" customClass="RelatedToActivity" customModule="DataWatch_NL_ESM_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Is your response related to your current activity?" textAlignment="center" numberOfLines="3" id="c6b-m7-F4E"/>
+                        <table alignment="left" id="e9g-D2-zzR">
+                            <items>
+                                <tableRow identifier="row" id="bEb-qa-sP6" customClass="TableRow" customModule="DataWatch_NL_ESM_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" alignment="left" id="quw-kg-9VJ">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="0kZ-N3-Nzm"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="0kZ-N3-Nzm" id="jYE-n8-B3e"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="e9g-D2-zzR" id="qDD-LT-aEA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="843" y="344"/>
+        </scene>
+        <!--TimeTableScreen-->
+        <scene sceneID="da2-2P-LiA">
+            <objects>
+                <controller identifier="TimeTableScreen" id="2CT-X3-NEp" customClass="TimeTable" customModule="DataWatch_NL_ESM_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="center" text="Where are you in the activity?" textAlignment="center" numberOfLines="2" id="KYl-nO-nVt"/>
+                        <table alignment="left" id="vhT-YJ-GuY">
+                            <items>
+                                <tableRow identifier="row" id="MFB-Yw-qh9" customClass="TableRow" customModule="DataWatch_NL_ESM_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" alignment="left" id="eb0-ol-xrh">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="3dO-WZ-4RK"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="3dO-WZ-4RK" id="qt5-KW-ab6"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="vhT-YJ-GuY" id="Lxp-gb-kbo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1008" y="12"/>
+        </scene>
+        <!--FinalScreen-->
+        <scene sceneID="dHe-ec-RmL">
+            <objects>
+                <controller identifier="FinalScreen" id="89I-zK-Fti" customClass="FinalScreen" customModule="DataWatch_NL_ESM_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="center" text="Here's what you entered:" textAlignment="center" numberOfLines="2" id="kZc-Bp-YJl"/>
+                        <label width="1" alignment="center" text="Label" textAlignment="center" numberOfLines="13" id="684-Ra-Yn4"/>
+                        <button width="1" alignment="left" title="Submit" id="ihz-a7-rpq">
+                            <color key="backgroundColor" red="0.21804757899999999" green="0.58465615500000001" blue="0.1363142654" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="submitButtonTapped" destination="89I-zK-Fti" id="thL-wC-qvy"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="overview" destination="684-Ra-Yn4" id="ZIQ-hn-Emp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1180" y="344"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" textAlignment="center" numberOfLines="0" id="IdU-wH-bcW"/>
+                        <label height="20" alignment="left" text="Study" id="8mD-Ip-iec">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Static do you have any questions?" numberOfLines="3" id="mwW-Q6-Rfq"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="810"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller animationDuration="1" spacing="10" id="eXb-UN-Cd0" customClass="NotificationController" customModule="DataWatch_NL_ESM_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="center" text="Study Reminder" textAlignment="center" id="aw5-R2-NKu">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="center" textAlignment="center" numberOfLines="7" id="Oov-OZ-fVh"/>
+                    </items>
+                    <color key="backgroundColor" red="0.018422339313583502" green="0.50762758949590636" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="notificationLabel" destination="Oov-OZ-fVh" id="rik-i1-io2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="1180"/>
+        </scene>
+    </scenes>
+</document>
